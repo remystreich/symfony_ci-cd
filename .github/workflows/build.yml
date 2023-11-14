@@ -10,5 +10,7 @@ jobs:
         uses: shivammathur/setup-php@2.27.1
       - name: Install dependencies
         run: composer install --prefer-dist
+      - name: Run tests
+        run: ./vendor/bin/phpunit
             
 
